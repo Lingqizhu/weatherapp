@@ -1,38 +1,41 @@
-.App {
+html{
+  background-image:url(https://images.unsplash.com/photo-1463947628408-f8581a2f4aca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.horizontal_hours {
+  display: flex;
+  justify-content: center;
+  border: 0px solid blue;
+}
+
+.hourly_item {
+  padding: 0em 1.5em 0em 1.5em;
+  border: 0px solid;
+  border-radius: 5em;
+  background-color: #D3D3D3;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.day_item {
+  padding: 0em 1.5em 0em 1.5em;
+  border: 0px solid;
+  border-radius: .5em;
+  background-color: #D3D3D3;
+  text-align: center;
   }
+
+.spacer {
+  width: 1em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.temp_bold {
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.small_italic {
+  font-style: italic;
+  font-size: .8em;
 }
