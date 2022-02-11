@@ -74,12 +74,12 @@ const LineChart = () => {
       {
         label: `Next 48 hours' Temperture `,
         data: weather?.hourly?.map((current) => current.temp),
-        backgroundColor: "gray",
-        borderColor: "gray",
+        backgroundColor: "#36846b",
+        borderColor: "#36846b",
         borderWidth: 1,
         fill: {
           target: "origin",
-          above: "gray", // Area will be red above the origin
+          above: "#36846b", // Area will be red above the origin
           below: "rgb(0, 0, 255)", // And blue below the origin
         },
       },
@@ -105,10 +105,16 @@ const LineChart = () => {
 
   };
 
+
   return (
+    <>
     <div>
       <Line data={data} height={400} options={options} />
     </div>
+    </>
+
+
+
   );
 };
 

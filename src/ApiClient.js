@@ -11,7 +11,7 @@ export class ApiClient {
   }
 
   getWeather() {
-    return this.getRequest("https://api.openweathermap.org/data/2.5/onecall?lat=53.382969&lon=-1.4659&exclude=minutely&units=metric&appid=06af2c84a95e6a736fd7bab4b3be279d")
+    return this.getRequest("https://api.openweathermap.org/data/2.5/onecall?lat=53.382969&lon=-1.4659&exclude=minutely&units=metric&appid=e55d867c338e1f35f4295b6bb0681c2e")
   }
 
   getRequest(url) {
