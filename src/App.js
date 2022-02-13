@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 import Home from "./Home";
+import City from "./City";
 import LineChart from "./LineChart";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
@@ -28,11 +29,14 @@ function App() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
-                <Nav.Link as={Link} to="/Home">
-                  Home
+                <Nav.Link as={Link} to="/">
+                  Sheffield weather forcast
                 </Nav.Link>
                 <Nav.Link as={Link} to="/LineChart">
-                  Click here to see more details of weather in the next 48 hours
+                Sheffield temperture fot the next 48 hours
+                </Nav.Link>
+                <Nav.Link as={Link} to="/City">
+                  Change City
                 </Nav.Link>
               </Nav>
             </Navbar.Collapse>
@@ -42,8 +46,9 @@ function App() {
 
       <Container className="app">
         <Routes>
-          <Route path="/Home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/LineChart" element={<LineChart />} />
+          <Route path="/City" element={<City />} />
         </Routes>
       </Container>
     </BrowserRouter>

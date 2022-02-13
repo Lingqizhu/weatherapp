@@ -75,9 +75,9 @@ function Home() {
           <h3>NOW</h3>
           <p>{nowAlt}<br/>
 
-          <p>{nowTemp}</p>
-          {current.wind_speed} Mph<br/>
-          {current.clouds}
+          <p>{nowTemp}°C</p>
+          <p><TiWeatherWindyCloudy /> Wind<br/>
+              {current.wind_speed} Mph</p>
           </p>
           </div>
           <p></p>
